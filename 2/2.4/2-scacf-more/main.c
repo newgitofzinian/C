@@ -8,5 +8,4 @@ int main(void) {
     ret = scanf("%d %f %c", &i, &f, &c); // ret是匹配成功的个数 不加空格会出错
     printf("i = %d, c= %c, f=%5.2f", i, c, f);
     return 0;
-
 }
