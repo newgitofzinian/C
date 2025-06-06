@@ -9,8 +9,9 @@ int main(void) {
     printf("a[0]=%d\n", arr[0]);
     arr[5] = 6; //访问越界
     arr[6] = 7;
-    for (int k = 1; k < i; k++) {
-        printf("a[%d]=%d\n", k, arr[k]);  // 访问越界
-    }
+    printf("%d", i);// i
+    // for (int k = 1; k < i; k++) {
+    //     printf("a[%d]=%d\n", k, arr[k]);  // 访问越界
+    // }
     return 0;
 }
