@@ -1,0 +1,1 @@
+#include <stdio.h>int main(void) {    int i = 5; //定义整型变量i    char c = 'a'; // 定义字符型变量c    // 定义整型指针变量i_pointer，并初始化    int *i_pointer = &i;    // 定义字符型指针变量c_pointer；    char *c_pointer;    // 变量c的地址赋值给c_pointer;    c_pointer = &c;    *i_pointer = 10; // 通过间接访问修改变量i的值    // i_pointer = 10; error写法    printf("i=%d\n", i);    return 0;}
