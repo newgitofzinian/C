@@ -22,6 +22,9 @@ int main() {
     change(p);
     std::cout << "After change: num = " << p->num << ", score = " << p->score << std::endl;
     free(p);
+    // short si = -32767;
+    // unsigned short usi = si;
+    // printf("short si = %d, usi = %u\n", si, usi);
     return 0;
 }
 

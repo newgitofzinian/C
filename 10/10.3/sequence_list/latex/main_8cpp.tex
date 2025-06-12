@@ -1,0 +1,89 @@
+\doxysection{main.\+cpp 文件参考}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{main.cpp@{main.cpp}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_seq_list}{Seq\+List}}
+\item 
+struct \mbox{\hyperlink{struct_sq_list}{Sq\+List}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{main_8cpp_a85633b531a313eee6f1f31eeed4a12ea}{Max\+Size}}~50
+\item 
+\#define \mbox{\hyperlink{main_8cpp_aca3e2fd7227736b107e52aadf1ca581a}{Init\+Size}}~100
+\end{DoxyCompactItemize}
+\doxysubsubsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+typedef int \mbox{\hyperlink{main_8cpp_a3e8b1bd855f5efcb6aa1f67fddcb69ad}{Elem\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{main_8cpp_a1efb1e73d074bf910cbcda2e987906e5}{List\+Insert}} (\mbox{\hyperlink{struct_sq_list}{Sq\+List}} \&L, int pos, \mbox{\hyperlink{main_8cpp_a3e8b1bd855f5efcb6aa1f67fddcb69ad}{Elem\+Type}} element)
+\begin{DoxyCompactList}\small\item\em 插入元素到顺序表 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a9c9732719fedd211b0fe1dc46e127221}{Print\+List}} (\mbox{\hyperlink{struct_sq_list}{Sq\+List}} L)
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{main_8cpp_doc-define-members}
+\doxysubsection{宏定义说明}
+\Hypertarget{main_8cpp_aca3e2fd7227736b107e52aadf1ca581a}\index{main.cpp@{main.cpp}!InitSize@{InitSize}}
+\index{InitSize@{InitSize}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{InitSize}{InitSize}}
+{\footnotesize\ttfamily \label{main_8cpp_aca3e2fd7227736b107e52aadf1ca581a} 
+\#define Init\+Size~100}
+
+\Hypertarget{main_8cpp_a85633b531a313eee6f1f31eeed4a12ea}\index{main.cpp@{main.cpp}!MaxSize@{MaxSize}}
+\index{MaxSize@{MaxSize}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{MaxSize}{MaxSize}}
+{\footnotesize\ttfamily \label{main_8cpp_a85633b531a313eee6f1f31eeed4a12ea} 
+\#define Max\+Size~50}
+
+
+
+\label{doc-typedef-members}
+\Hypertarget{main_8cpp_doc-typedef-members}
+\doxysubsection{类型定义说明}
+\Hypertarget{main_8cpp_a3e8b1bd855f5efcb6aa1f67fddcb69ad}\index{main.cpp@{main.cpp}!ElemType@{ElemType}}
+\index{ElemType@{ElemType}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{ElemType}{ElemType}}
+{\footnotesize\ttfamily \label{main_8cpp_a3e8b1bd855f5efcb6aa1f67fddcb69ad} 
+typedef int \mbox{\hyperlink{main_8cpp_a3e8b1bd855f5efcb6aa1f67fddcb69ad}{Elem\+Type}}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{main_8cpp_doc-func-members}
+\doxysubsection{函数说明}
+\Hypertarget{main_8cpp_a1efb1e73d074bf910cbcda2e987906e5}\index{main.cpp@{main.cpp}!ListInsert@{ListInsert}}
+\index{ListInsert@{ListInsert}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{ListInsert()}{ListInsert()}}
+{\footnotesize\ttfamily \label{main_8cpp_a1efb1e73d074bf910cbcda2e987906e5} 
+bool List\+Insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sq_list}{Sq\+List}} \&}]{L}{, }\item[{int}]{pos}{, }\item[{\mbox{\hyperlink{main_8cpp_a3e8b1bd855f5efcb6aa1f67fddcb69ad}{Elem\+Type}}}]{element}{}\end{DoxyParamCaption})}
+
+
+
+插入元素到顺序表 
+
+顺序表的插入,因为\+L会改变,所以使用引用 \begin{DoxyReturn}{返回}
+bool值,插入成功或失败 @L 插入的目标顺序表 @pos 插入位置 @element 插入的数据 
+\end{DoxyReturn}
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{main_8cpp_a9c9732719fedd211b0fe1dc46e127221}\index{main.cpp@{main.cpp}!PrintList@{PrintList}}
+\index{PrintList@{PrintList}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{PrintList()}{PrintList()}}
+{\footnotesize\ttfamily \label{main_8cpp_a9c9732719fedd211b0fe1dc46e127221} 
+void Print\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sq_list}{Sq\+List}}}]{L}{}\end{DoxyParamCaption})}
+
