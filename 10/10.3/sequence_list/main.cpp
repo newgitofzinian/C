@@ -19,9 +19,9 @@ typedef struct {
 /**  顺序表的插入,因为L会改变,所以使用引用
  *  @brief 插入元素到顺序表
  *  @return bool值,插入成功或失败
- *  @L 插入的目标顺序表
- *  @pos 插入位置
- *  @element 插入的数据
+ *  @param L 插入的目标顺序表
+ *  @param pos 插入位置
+ *  @param element 插入的数据
  */
 bool ListInsert(SqList &L, int pos, ElemType element) {
     // 判断插入的位置是否合法
