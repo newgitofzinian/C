@@ -25,7 +25,7 @@ bool isFull(LinkQueue Q) {
 }
 
 bool EnQueue(LinkQueue &Q, ElemType x) {
-   if (isFull(Q) || isEmpty(Q)) {
+   if (isFull(Q) || Q.rear->next == nullptr) {
        // 满队列增加空间
        LinkNode p = (LinkNode)malloc(sizeof(Node));
        Q.rear->data = x;

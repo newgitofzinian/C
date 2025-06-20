@@ -26,7 +26,7 @@
            ↑--------------------------|
   ```
 4. 入队操作：
-   - 判断队列是否为满或为空,若是,则创建一个新结点.把x赋给`Q.rear->data`,然后把`Q.rear->next`指向新结点,然后把`Q.rear`指向新结点.
+   - 判断队列是否为满或尾结点指向的结点是否为空,若是,则创建一个新结点.把x赋给`Q.rear->data`,然后把`Q.rear->next`指向新结点,然后把`Q.rear`指向新结点.
    - 若队列不为空,同样将x赋值,然后`Q.rear = Q.rear->next`,即把尾指针后移一位.
    - 时间复杂度为O(1)
      
@@ -62,7 +62,7 @@ bool isFull(LinkQueue Q) {
 }
 
 bool EnQueue(LinkQueue &Q, ElemType x) {
-   if (isFull(Q) || isEmpty(Q)) {
+   if (isFull(Q) || Q.rear -> next = nullptr) {
        // 满队列增加空间
        LinkNode p = (LinkNode)malloc(sizeof(Node));
        Q.rear->data = x;
