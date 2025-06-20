@@ -34,8 +34,9 @@
   24. socket实现网络编程实战
 
 ## 考研真题实战
-[2019年单链表](https://github.com/newgitofzinian/C/blob/master/12/12.4/SortList/topic.md)
-[2019年队列)(https://github.com/newgitofzinian/C/blob/master/13/13.8/Queue/Topic.md)
+- [2019年单链表](https://github.com/newgitofzinian/C/blob/master/12/12.4/SortList/topic.md)
+
+- [2019年队列](https://github.com/newgitofzinian/C/blob/master/13/13.8/Queue/Topic.md)
 
 
 
