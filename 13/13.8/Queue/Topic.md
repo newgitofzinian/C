@@ -49,7 +49,7 @@ typedef struct Queue {
 
 void InitQueue(LinkQueue &Q){
     LinkNode q = (LinkNode)malloc(sizeof(Node));
-    q->next = nullptr;
+    q->next = q;
     Q.front = Q.rear = q;
 };
 
@@ -62,7 +62,7 @@ bool isFull(LinkQueue Q) {
 }
 
 bool EnQueue(LinkQueue &Q, ElemType x) {
-   if (isFull(Q) || Q.rear -> next = nullptr) {
+   if (isFull(Q)) {
        // 满队列增加空间
        LinkNode p = (LinkNode)malloc(sizeof(Node));
        Q.rear->data = x;
