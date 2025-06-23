@@ -18,7 +18,7 @@ void LeverlOrder(BiTree T) {
     }
     std::cout << std::endl;
 }
-int WPL(BiTree root, int depth = 1){
+int WPL(BiTree root, int depth = 0){
     if(root==NULL){
         return 0;
     }

@@ -62,7 +62,7 @@ int WPL(TreeNode* root){
 ### 算法描述
 
 ```c++
-int WPL(TreeNode* root, int depth = 1){
+int WPL(TreeNode* root, int depth = 0){
    if(root==NULL){
    return 0;}
    if(root->left==NULL && root ->right == NULL){  // 叶子结点
