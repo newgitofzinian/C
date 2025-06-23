@@ -14,4 +14,5 @@ set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g -O0 -DDEBUG")
 
 
 add_executable(Tree main.cpp
-        function.h)
+        function.h
+        queue.cpp)
