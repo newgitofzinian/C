@@ -18,6 +18,17 @@ void LeverlOrder(BiTree T) {
     }
     std::cout << std::endl;
 }
+int WPL(BiTree root, int depth = 1){
+    if(root==NULL){
+        return 0;
+    }
+    if(root->lchild==NULL && root->rchild==NULL ){  // 叶子结点
+        return depth * root->data;
+    }
+    int leftWPL = WPL(root->lchild, depth+1);
+    int rightWPL = WPL(root->rchild, depth+1);
+    return leftWPL + rightWPL;
+}
 
 int main() {
     BiTree pnew;  // 申请一个树的新结点
@@ -63,12 +74,9 @@ int main() {
 
     // 层序遍历
     LeverlOrder(tree);
-    // 释放内存
-    while (nullptr != phead) {
-        pcur = phead->pnext;
-        free(phead->addr);
-        free(phead);
-        phead = pcur;
-    }
+
+
+
+    std::cout << "WPL: " << WPL(tree) << std::endl;
     return 0;
 }

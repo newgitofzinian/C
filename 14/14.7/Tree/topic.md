@@ -64,7 +64,7 @@ int WPL(TreeNode* root){
 ```c++
 int WPL(TreeNode* root, int depth = 1){
    if(root==NULL){
-   retrun 0;}
+   return 0;}
    if(root->left==NULL && root ->right == NULL){  // 叶子结点
       return depth * root->weight;
    }

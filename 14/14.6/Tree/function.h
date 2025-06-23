@@ -6,7 +6,7 @@
 #define FUNCTION_H
 #include <iostream>
 
-typedef char  BiElemType;
+typedef char BiElemType;
 typedef struct BiTNode {
     BiElemType data;
     BiTNode *lchild, *rchild;
