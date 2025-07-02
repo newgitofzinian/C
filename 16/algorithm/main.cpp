@@ -25,8 +25,13 @@ int main() {
     // 快速排序
     // quick_sort(arr, 0, 9);
     // 选择排序
-    select_sort(arr, 10);
-    // 打印排序后的数组
+    // select_sort(arr, 10);
+    // 堆排序
+    // heap_sort(arr, 10, 0);
+    // 归并排序
+    merge_sort(arr, 0, 9);
+    // 计数排序
+    // 打印排序后的数组®
     for (int i = 0; i < 10; i++) {
         printf("%d ", arr[i]);
     }

@@ -17,4 +17,6 @@ add_executable(algorithm main.cpp
         bubble.cpp
         algorithm.h
         qucik.cpp
-        select.cpp)
+        select.cpp
+        heap.cpp
+        marge.cpp)
