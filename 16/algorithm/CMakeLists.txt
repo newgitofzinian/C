@@ -16,4 +16,5 @@ set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g -O0 -DDEBUG")
 add_executable(algorithm main.cpp
         bubble.cpp
         algorithm.h
-        qucik.cpp)
+        qucik.cpp
+        select.cpp)

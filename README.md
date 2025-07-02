@@ -40,5 +40,7 @@
 
 - [2014年二叉树](https://github.com/newgitofzinian/C/blob/master/14/14.7/Tree/topic.md)
 
+- [2014年二分查找](https://github.com/newgitofzinian/C/blob/master/15/topic/topic.md)
+
 
 

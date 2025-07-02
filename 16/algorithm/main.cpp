@@ -21,10 +21,11 @@ int main() {
     printf("\n");
 
     // 冒泡排序
-    // bubble_sort(arr, 10, 1);
+    // bubble_sort(arr, 10);
     // 快速排序
-    quick_sort(arr, 0, 9);
-    // 插入排序
+    // quick_sort(arr, 0, 9);
+    // 选择排序
+    select_sort(arr, 10);
     // 打印排序后的数组
     for (int i = 0; i < 10; i++) {
         printf("%d ", arr[i]);

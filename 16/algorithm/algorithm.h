@@ -13,4 +13,5 @@ typedef int ElemType;
 void swap(ElemType &a, ElemType &b);
 void bubble_sort(ElemType arr[], int len, int id = 1); // 默认升序排序
 void quick_sort(ElemType arr[], int low, int high); // 默认升序排序
+void select_sort(ElemType arr[], int len, int id = 1); // 默认升序排序
 #endif //ALGORITHM_H
