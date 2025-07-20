@@ -6,7 +6,7 @@ typedef struct Stack {
     Stack *next;
 }LStack, *LinkStack;
 
-void InitStack(LinkStack S) {
+void InitStack(LinkStack &S) {
     S = NULL;   // 不带头结点
 }
 
@@ -15,9 +15,12 @@ bool  StackEmpty(LinkStack S) {
 }
 
 // 入栈
-bool Push(LinkStack S, ElemType x) {
+bool Push(LinkStack &S, ElemType x) {
     LinkStack p = new LStack();
     p->data = x;
+    // if (StackEmpty(S)) {
+    //     S = p;
+    // }
     p->next = S;
     S = p;
     return true;
@@ -25,7 +28,7 @@ bool Push(LinkStack S, ElemType x) {
 
 
 // 出栈
-bool Pop(LinkStack S, ElemType &x) {
+bool Pop(LinkStack &S, ElemType &x) {
     if (StackEmpty(S))
         return false;
     LinkStack p = S;
@@ -36,6 +39,19 @@ bool Pop(LinkStack S, ElemType &x) {
 }
 
 int main() {
+    // 测试
+    LinkStack S;
+    InitStack(S);
+    Push(S, 1);
+    Push(S, 2);
+    Push(S, 3);
+    ElemType x;
+    Pop(S, x);
+    std::cout << x << std::endl;
+    Pop(S, x);
+    std::cout << x << std::endl;
+    Pop(S, x);
+    std::cout << x << std::endl;
     std::cout << "Hello, World!" << std::endl;
     return 0;
 }
